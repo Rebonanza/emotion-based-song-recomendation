@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container p-5 text-center " >
+    <span class="badge rounded-pill mt-4 fs-6" style="background-color: #B3BFFB;color:#06357C; padding:15px;width:150px;">Kireyna Hoshi</span>
+    <h1 class="mt-5 fw-bold">How was your day</h1>
+    <p class="mt-3 fw-normal">Describe your emotion here and we pick a song that convenient to your emotion right now</p>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-lg-6 justify-content-end d-flex text-center">
+                <a href="/songs" style="text-decoration: none;">
+                    <div class="card shadow" style="width: 15rem;border-radius:30px;">
+                        <img src="{{ url_for('static', filename='img/anger.png') }}" class="card-img-top " alt="...">
+                        <div class="card-body">
+                          <p class="card-text fw-bold">Anger</p>
+                        </div>
+                      </div>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a href="/songs" style="text-decoration: none;">
+                    <div class="card shadow" style="width: 15rem; border-radius:30px;">
+                        <img src="{{ url_for('static', filename='img/fear.png') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text fw-bold">Fear</p>
+                        </div>
+                      </div>
+                </a>
+            </div>
+    </div>
+    </div>
+    <div class="container mt-4">
+        <div class="row text-center">
+            <div class="col-lg-6 justify-content-end d-flex">
+                <a href="/songs" style="text-decoration: none;">
+                    <div class="card shadow" style="width: 15rem;border-radius:30px;">
+                        <img src="{{ url_for('static', filename='img/joy.png') }}" class="card-img-top " alt="...">
+                        <div class="card-body">
+                          <p class="card-text fw-bold">Joy</p>
+                        </div>
+                      </div>
+                </a>
+            </div>
+            <div class="col-lg-6">
+                <a href="/songs" style="text-decoration: none;">
+                    <div class="card shadow" style="width: 15rem;border-radius:30px;">
+                        <img src="{{ url_for('static', filename='img/sad.png') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text fw-bold">Sad</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+    </div>
+   
+</div>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container p-5 text-center " >
+    <span class="badge rounded-pill mt-4 fs-6" style="background-color: #B3BFFB;color:#06357C; padding:15px;width:150px;">Kireyna Hoshi</span>
+    <h1 class="mt-5"><b>Emotion Based Song Recomendation</b></h1>
+    <p class="mt-3 fw-normal">This Website give you a couple recomendation of songs based on your current emotion</p>
+    <form action="" method="post" class="mt-5">
+        <div class="container text-center">
+            <div class="row justify-content-center d-flex ">
+                <div class="col-xs-4  w-50">
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Song Name" aria-label="Song Name" aria-describedby="button-addon2">
+                        <button class="btn" type="button" id="button-addon2" style="background-color: #aafca5;border:none">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <h3 class="fw-bold my-3">Result</h3>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card shadow mb-3 text-start p-2" style="max-width: 540px; border-radius:25px;">
+                    <div class="row g-0">
+                      <div class="col-md-4 ">
+                        <img src="{{ url_for('static', filename='img/song-img2.jpg') }}" class="img-fluid rounded" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title fw-bold m-0">Wallows</h5>
+                          <span class="card-text" style="font-size: 12px;">Do Not Wait</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-3 text-start p-2" style="max-width: 540px; border-radius:25px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ url_for('static', filename='img/song-img.jpg') }}" class="img-fluid rounded" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold m-0">Wallows</h5>
+                            <span class="card-text" style="font-size: 12px;">Guitar Romantic Search Adventure</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card mb-3 text-start p-2" style="max-width: 540px; border-radius:25px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="{{ url_for('static', filename='img/song-img.jpg') }}" class="img-fluid rounded" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold m-0" >Wallows</h5>
+                            <span class="card-text" style="font-size: 12px;">Especially You</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}
